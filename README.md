@@ -4,5 +4,5 @@
 
 
 ### Полезные ссылки:
-https://habrahabr.ru/company/mailru/blog/303456/
-https://habrahabr.ru/post/264423/
+* [Руководство по работе с Redux](https://habrahabr.ru/company/mailru/blog/303456/)
+* [Изоморфное Приложение с React и Redux](https://habrahabr.ru/post/264423/)
