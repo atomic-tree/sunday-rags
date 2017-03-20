@@ -28,6 +28,12 @@ module.exports = {
       test: /\.json$/,
       exclude: /(node_modules)/,
       use: 'json-loader'
+    }, {
+      test: /\.css$/,
+      use: 'style-loader!css-loader!autoprefixer-loader'
+    }, {
+      test: /\.scss$/,
+      use: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
     }]
   }
 };
