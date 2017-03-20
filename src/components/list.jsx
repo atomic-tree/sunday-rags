@@ -1,11 +1,11 @@
 import React from 'react';
 import Profile from './profile.jsx';
-import './stylesheets/list.scss';
+import '../stylesheets/list.scss';
 
 
 const List = ({ id, title, data }) => {
   let actors = data.map((actor, i) => {
-    return <Profile key={i} name={actor.name} link={actor.link} />;
+    return <Profile key={i} name={actor.title} link={actor.link} />;
   });
 
   return (

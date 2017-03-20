@@ -1,0 +1,104 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$page-size: 1128px;
+$bg-color: #F9F9F4;
+* {
+  box-sizing: border-box;
+}
+
+blockquote,
+body,
+div,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+iframe,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+section,
+table,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 0;
+  display: block;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  display: block;
+}
+
+.wrapper {
+  background-color: $bg-color;
+}
+
+.wrap {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 8px;
+}
+
+.header {
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.page {
+  box-sizing: content-box;
+  display: block;
+  position: relative;
+}
+
+[role=main] {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page[role=main] {
+  padding-bottom: 0;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+@media #{$desktop} {
+  .header {
+    height: 98px;
+  }
+  .page {
+    max-width: $page-size;
+  }
+}
+
+@media #{$tablet} {
+  .header {
+    height: 78px;
+  }
+  .page {
+    width: calc(100vw - 20px);
+  }
+}

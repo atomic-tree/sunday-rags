@@ -1,13 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
-import List from './list.jsx';
-import data from './data/profiles';
+
+import MainLayout from './layouts/main.layout.jsx';
+import List from './components/list.jsx';
+
+import profiles from './data/profiles';
+import './stylesheets/common.scss';
+
 
 const App = () => {
   return (
-    <div className='page'>
-      <List id='actors' title='List of Actors' data={data} />
-    </div>
+    <MainLayout>
+      <List id='my-profiles' title='My Profiles' data={profiles} />
+    </MainLayout>
   );
 };
 
