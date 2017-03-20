@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Profile from './profile.jsx';
-import data from './data.json';
+import profiles from './data/profiles.json';
 
 
 const List = ({ id, title }) => {
-  let actors = data.map((actor, i) => {
+  let actors = profiles.map((actor, i) => {
     return <Profile key={i} name={actor.name} />;
   });
 
