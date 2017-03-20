@@ -9,7 +9,12 @@
 
 > ./node_modules/.bin/webpack
 
-### Полезные ссылки:
+### Модули для webpack
+
+* [json-loader](https://github.com/webpack-contrib/json-loader)
+
+
+### Полезные ссылки
 
 * [Готовим плацдарм для react-приложения](https://habrahabr.ru/post/324232/)
 * [Руководство по работе с Redux](https://habrahabr.ru/company/mailru/blog/303456/)

@@ -24,6 +24,10 @@ module.exports = {
           presets: ['latest', 'react', 'stage-0']
         }
       }]
+    }, {
+      test: /\.json$/,
+      exclude: /(node_modules)/,
+      use: 'json-loader'
     }]
   }
 };

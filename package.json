@@ -1,7 +1,7 @@
 {
   "name": "sunday-rags",
   "version": "1.0.0",
-  "description": "Шаблон для создания клиентского изоморфного приложения",
+  "description": "A project focusing on React and related tools",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server"
   },
@@ -27,6 +27,7 @@
     "babel-preset-latest": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
+    "json-loader": "^0.5.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   },
