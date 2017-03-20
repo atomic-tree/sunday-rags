@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './src/app.client',
+  entry: './src/app.client.jsx',
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     filename: 'bundle.js',
@@ -10,12 +10,12 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    contentBase: './dist',
+    contentBase: path.resolve(__dirname, 'dist'),
     port: 3000
   },
   module: {
     rules: [{
-      test: /\.js$/,
+      test: /\.js(x?)$/,
       exclude: /(node_modules)/,
       use: [{
         loader: 'babel-loader',
