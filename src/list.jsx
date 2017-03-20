@@ -2,7 +2,7 @@ import React from 'react';
 
 import Profile from './profile.jsx';
 import data from './data/profiles';
-
+import './stylesheets/list.scss';
 
 const List = ({ id, title }) => {
   let actors = data.map((actor, i) => {
