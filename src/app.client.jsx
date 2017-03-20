@@ -1,11 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
+import List from './list.jsx';
 
-render(
-  <h1 id='title'
-      className='header'
-      style={{backgroundColor: 'orange', color: 'white', fontFamily: 'verdana'}}>
-    HEY WORLD!!!
-  </h1>,
-  document.getElementById('react-container')
-);
+const App = () => {
+  return (
+    <div className='page'>
+      <List id='actors' title='List of Actors' />
+    </div>
+  );
+};
+
+render(<App />, document.getElementById('react-container'));
