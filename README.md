@@ -5,7 +5,7 @@
 
 ### FAQ
 
-If you'd prefer not to use a global command, what you can do is this, you can use: 
+Для того что бы запустить сборшик модулей можно вызвать его локально:
 
 > ./node_modules/.bin/webpack.
 
