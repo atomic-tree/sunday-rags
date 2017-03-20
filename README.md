@@ -3,6 +3,12 @@
 Шаблон для создания клиентского изоморфного приложения с использованием следующих инструментов:
 
 
+### FAQ
+
+If you'd prefer not to use a global command, what you can do is this, you can use: 
+
+> ./node_modules/.bin/webpack.
+
 ### Полезные ссылки:
 
 * [Готовим плацдарм для react-приложения](https://habrahabr.ru/post/324232/)
