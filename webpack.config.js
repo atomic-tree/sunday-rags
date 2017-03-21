@@ -1,15 +1,32 @@
+// https://webpack.js.org/configuration/
 var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './src/app.client.jsx',
+  entry: './src/app.client',
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     filename: 'bundle.js',
     publicPath: 'assets'
   },
   resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ],
+    alias: {
+      stylesheets: path.resolve(__dirname, 'src/stylesheets')
+    },
     extensions: ['.js', '.jsx', '.json', '.scss']
+  },
+  devtool: 'source-map',
+  target: 'web',
+  stats: {
+    assets: true,
+    colors: true,
+    errors: true,
+    errorDetails: true,
+    hash: true
   },
   devServer: {
     inline: true,
@@ -20,13 +37,7 @@ module.exports = {
     rules: [{
       test: /\.(js|jsx)$/,
       exclude: /(node_modules)/,
-      use: [{
-        loader: 'babel-loader',
-        options: {
-          babelrc: false,
-          presets: ['latest', 'react', 'stage-0']
-        }
-      }]
+      use: 'babel-loader'
     }, {
       test: /\.json$/,
       exclude: /(node_modules)/,

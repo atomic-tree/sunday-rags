@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from './profile';
 import AltText from './alt.text';
-import '../stylesheets/list';
+import 'stylesheets/list';
 
 
 

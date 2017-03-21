@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A project focusing on React and related tools",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",
