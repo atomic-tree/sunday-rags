@@ -11,10 +11,11 @@ import profile from './data/profile';
 
 
 const App = () => {
+  const { introduction, tagline } = profile.story;
   return (
     <Layout>
-      <InfoPanel {...profile} />
-      <nav>
+      <InfoPanel introduction={introduction} tagline={tagline} />
+      <nav className='board-container'>
         <List id='my-profiles' title='My Profiles' data={bookmarks} />
       </nav>
     </Layout>

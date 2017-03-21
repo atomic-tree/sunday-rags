@@ -1,4 +1,45 @@
 {
-  "about": "Web developer specializing in modular design systems & front-end architecture.",
-  "location": "Based in Kiev, Ukraine."
+  "name": {
+    "first": "Andrei",
+    "last": "Pavlyuk"
+  },
+  "gender": "Male",
+  "birthday": {
+    "data": "June 26, 1986",
+    "visible": true
+  },
+  "avatar": "https://secure.gravatar.com/avatar/5d43fb61a69fe2a44aac5e90b8c964d9?size=400",
+  "occupation": "Software Engineering",
+  "contacts": [{
+    "title": "Mobile",
+    "value": "+380 63 221 88 13"
+  }, {
+    "title": "Email",
+    "value": "devdice@outlook.com"
+  }, {
+    "title": "Email",
+    "value": "dedice50@gmail.com"
+  }, {
+    "title": "Skype",
+    "value": "spacewormdeltag"
+  }],
+  "education": [{
+    "school": [{
+      "name": "High School #255",
+      "year": {
+        "end": "2003"
+      }
+    }, {
+      "name": "CyberBionic Systematics",
+      "major": ".NET Developer",
+      "year": {
+        "start": "2012",
+        "end": "2012"
+      }
+    }]
+  }],
+  "story": {
+    "introduction": "Web developer 🔥 specializing in modular design systems & front-end architecture.",
+    "tagline": "Based in 🌍 Kiev, Ukraine."
+  }
 }

@@ -5,7 +5,7 @@ export default class Profile extends Component {
   render() {
     return (
       <div className='profile'>
-        <a href={this.props.link}>{this.props.name}</a>
+        <a href={this.props.link} target='_blanck'>{this.props.name}</a>
       </div>
     );
   }

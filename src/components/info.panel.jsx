@@ -12,8 +12,8 @@ const InfoPanel = (props) => {
   };
   return (
     <section className='info-panel'>
-      <TextBlock text={props.about} style={style} />
-      <TextBlock text={props.location} style={style} />
+      <TextBlock text={props.introduction} style={style} />
+      <TextBlock text={props.tagline} style={style} />
     </section>
   );
 };

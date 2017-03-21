@@ -1,15 +1,17 @@
-$ls-color: #e2af24;
+$ls-border-color: #e2af24;
 $ls-txt-color: rgba(0, 0, 0, .85);
 .list {
-  border-top: 3px solid $ls-color;
+  border-top: 3px solid $ls-border-color;
   color: $ls-txt-color;
   background: white;
-  margin: 0 20px 22px 0;
-  padding: 0;
+  width: 40%;
+  margin: 20px 0 22px 0;
+  padding: 10px 32px;
   font-weight: 600;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif, Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, Droid Sans Fallback, -apple-system, '.SFNSDisplay-Regular', Heiti SC, Microsoft Yahei, Segoe UI;
 }
 
-.list h2 {
-  font-size: 14px;
+$pixel10: 10px;
+.list h3 {
+  font-size: 16px;
+  padding: $pixel10 0 $pixel10 - 2px;
 }
