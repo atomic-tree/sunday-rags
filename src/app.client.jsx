@@ -1,17 +1,22 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Layout from './layout.jsx';
-import List from './components/list.jsx';
+import Layout from './layout';
+import InfoPanel from './components/info.panel';
+import List from './components/list';
+import './stylesheets/globals';
 
-import profiles from './data/profiles';
-import './stylesheets/common.scss';
+import bookmarks from './data/bookmarks';
+import profile from './data/profile';
 
 
 const App = () => {
   return (
     <Layout>
-      <List id='my-profiles' title='My Profiles' data={profiles} />
+      <InfoPanel {...profile} />
+      <nav>
+        <List id='my-profiles' title='My Profiles' data={bookmarks} />
+      </nav>
     </Layout>
   );
 };

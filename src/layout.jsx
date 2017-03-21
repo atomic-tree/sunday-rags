@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
-import './stylesheets/common.scss';
-
-import AltText from './components/alt.text.jsx';
+import './stylesheets/globals';
 
 
 const Layout = (props) => {
@@ -18,7 +16,7 @@ const Layout = (props) => {
 
 // validation rules
 Layout.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.array.isRequired
 };
 
 export default Layout;
@@ -28,7 +26,7 @@ export default Layout;
 const Header = (props) => {
   return (
     <header id='header' className='header' role='banner'>
-      <AltText normal="Hello" modified="World" />
+
     </header>
   );
 };

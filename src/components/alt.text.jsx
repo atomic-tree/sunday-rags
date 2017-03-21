@@ -1,11 +1,9 @@
-// https://github.com/JedWatson/react-alt-text/blob/master/lib/AltText.js
-
 import React, { Component, PropTypes } from 'react';
 import blacklist from 'blacklist';
 import vkey from 'vkey';
 
 
-class AltText extends Component {
+export default class AltText extends Component {
   constructor(props) {
     super(props);
 
@@ -43,14 +41,13 @@ class AltText extends Component {
 
   render() {
     let props = blacklist(this.props, 'component', 'modifier', 'normal', 'modified');
-    return (
-      <span {...props}>
-        {this.state.modified ? this.state.modified : this.props.normal}
-      </span>
-    );
+    return React.createElement(this.props.component, props,
+      this.state.modified ? this.props.modified : this.props.normal);
   }
 }
 
+
+AltText.displayName = 'AltText';
 
 // default component values
 AltText.defaultProps = {
@@ -60,12 +57,7 @@ AltText.defaultProps = {
   modified: ''
 };
 
-AltText.displayName = 'AltText';
-
 // validation rules
 AltText.propTypes = {
   modifier: PropTypes.string.isRequired
 };
-
-
-export default AltText;

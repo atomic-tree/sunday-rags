@@ -1,6 +1,8 @@
 import React from 'react';
-import Profile from './profile.jsx';
-import '../stylesheets/list.scss';
+import Profile from './profile';
+import AltText from './alt.text';
+import '../stylesheets/list';
+
 
 
 const List = ({ id, title, data }) => {
@@ -10,7 +12,9 @@ const List = ({ id, title, data }) => {
 
   return (
     <div className='list'>
-      <h2 id={id}>{title}</h2>
+      <h2 id={id}>
+        <AltText normal={title} modified='Bookmarks' />
+      </h2>
       {actors}
     </div>
   );
