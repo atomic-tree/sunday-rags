@@ -1,4 +1,6 @@
 // https://webpack.js.org/configuration/
+// https://webpack.js.org/guides/development/#webpack-dev-middleware
+
 var webpack = require('webpack');
 var path = require('path');
 
