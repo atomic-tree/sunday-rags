@@ -19,6 +19,9 @@ module.exports = {
     },
     extensions: ['.js', '.jsx', '.json', '.scss']
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devtool: 'source-map',
   target: 'web',
   stats: {
@@ -26,12 +29,20 @@ module.exports = {
     colors: true,
     errors: true,
     errorDetails: true,
-    hash: true
+    hash: true,
+    modules: true,
+    publicPath: true,
+    reasons: true
   },
   devServer: {
     inline: true,
     contentBase: path.resolve(__dirname, 'dist'),
-    port: 3000
+    port: 3000,
+    hot: true,
+    overlay: {
+      warnings: true,
+      errors: true
+    }
   },
   module: {
     rules: [{
@@ -44,7 +55,7 @@ module.exports = {
       use: 'json-loader'
     }, {
       test: /\.css$/,
-      use: 'style-loader!css-loader!autoprefixer-loader'
+      use: ['style-loader', 'css-loader', 'autoprefixer-loader']
     }, {
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader']
