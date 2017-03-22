@@ -1,4 +1,20 @@
 [{
+  "title": "Mocha.js – JavaScript Test Framework",
+  "link": "https://mochajs.org/",
+  "tags": ["testing"]
+}, {
+  "title": "Chai.js – Assertion Library",
+  "link": "http://chaijs.com/",
+  "tags": ["testing"]
+}, {
+  "title": "Sinon.js – Standalone Test Spies, Stubs & Mocks",
+  "link": "http://sinonjs.org/",
+  "tags": ["testing"]
+}, {
+  "title": "Blanket.js – Seamless Javascript Code Coverage",
+  "link": "http://blanketjs.org/",
+  "tags": ["testing"]
+}, {
   "title": "Emojipedia",
   "link": "http://emojipedia.org/"
 }, {
