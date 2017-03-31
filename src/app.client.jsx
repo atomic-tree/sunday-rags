@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import Layout from './layout';
 import InfoPanel from './components/info.panel';
 import List from './components/list';
-import TimeCounter from './components/time.counter';
+import SkiDayList from './components/ski.day.list';
 import 'stylesheets/globals';
 
 import bookmarks from './data/bookmarks';
@@ -18,10 +18,28 @@ const App = () => {
       <InfoPanel introduction={introduction} tagline={tagline} />
       <nav className='board-container'>
         <List id='my-profiles' title='My Profiles' data={bookmarks} />
-        <TimeCounter total={30}
-          powder={20}
-          backcountry={10}
-          goal={100} />
+        <SkiDayList days={
+          [
+            {
+              resort: 'Squaw Valley',
+              date: new Date('1-Jan-2017'),
+              powder: true,
+              backcountry: false
+            },
+            {
+              resort: 'Krikwood',
+              date: new Date('28-Mar-2017'),
+              powder: false,
+              backcountry: false
+            },
+            {
+              resort: 'Mt. Tallac',
+              date: new Date('2-Apr-2017'),
+              powder: false,
+              backcountry: true
+            },
+          ]
+        } />
       </nav>
 
     </Layout>
