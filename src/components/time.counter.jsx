@@ -12,7 +12,7 @@ const calcGoalProgress = (total, goal) => {
   return percentToDecimal(total / goal);
 };
 
-const TimeCounter = ({ total, powder, backcountry, goal }) => {
+const TimeCounter = ({ total = 70, powder = 35, backcountry = 10, goal = 75 }) => {
   return (
     <div className="time-counter">
       <div className="total-days">
@@ -39,11 +39,11 @@ const TimeCounter = ({ total, powder, backcountry, goal }) => {
   );
 };
 
-TimeCounter.defaultProps = {
-  total: 50,
-  powder: 50,
-  backcountry: 15,
-  goal: 100
-};
+// TimeCounter.defaultProps = {
+//   total: 50,
+//   powder: 50,
+//   backcountry: 15,
+//   goal: 100
+// };
 
 export default TimeCounter;
